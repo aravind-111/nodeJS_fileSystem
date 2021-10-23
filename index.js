@@ -1,6 +1,8 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
+require("dotenv").config();
+const PORT = process.env.PORT || 5000;
 
 if (!fs.existsSync("TimeFiles")) fs.mkdir("TimeFiles");
 
@@ -52,6 +54,6 @@ app.get("/", (req, res) => {
   );
 });
 
-app.listen(5000, () => {
-  console.log("server runnibg at port 5000");
+app.listen(PORT, () => {
+  console.log("server running at port 5000");
 });
