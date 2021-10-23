@@ -48,7 +48,7 @@ app.get("/getfile", (req, res) => {
 
 app.get("/", (req, res) => {
   res.send(
-    `go to ${'"http://localhost:5000/createfile"'} to create a file. <br><br> go to ${'"http://localhost:5000/getfile" to view the files.'}`
+    `go to ${'"https://aravind-node-filesystem.herokuapp.com/createfile"'} to create a file. <br><br> go to ${'"https://aravind-node-filesystem.herokuapp.com/getfile" to view the files.'}`
   );
 });
 
